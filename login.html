@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+     .background{
+         background-color: #1D487B;
+         height:750px;
+         
+     } 
+     .form_back{
+         background-color: white;
+         height:550px;
+         width:900px;
+         margin-top: 150px;
+         box-shadow: 0 0 30px black;
+         border-top-left-radius:50px;
+         border-bottom-right-radius:50px;
+         position:relative;
+         top:-30px;
+         
+     }
+     .demo{
+        display: flex;
+         justify-content: center;
+         
+     }
+     .left{
+         background-color:#5079A9;
+         height:550px;
+         border-top-left-radius:50px;
+
+         
+         
+     }
+     .right{
+         background-color:white;
+         height:550px;
+         border-bottom-right-radius:50px;
+     }
+     .lock_icon{
+         height:100px;
+         margin-top:70px;
+     }
+     .user_input{
+      
+      border: none;
+      outline: none;
+      background: none;
+      color:black;
+      border-radius: 0px;
+      font-weight: bolder;
+      box-shadow: 0 5px 6px -6px black;
+      
+    }
+    .user_input:focus{
+      color:black;
+      background: white;
+      box-shadow: 0 5px 6px -6px black;
+    }
+    .password_input{
+      margin-top: 30px;
+      border: none;
+      outline: none;
+      background: none;
+      color:black;
+      border-radius: 0px;
+      font-weight: bolder;
+      box-shadow: 0 5px 6px -6px black;
+    }
+    .password_input:focus{
+
+      color:black;
+      background: white;
+      box-shadow: 0 5px 6px -6px black;
+    }
+    
+    .login_btn{
+      margin-top: 20px;
+      border-radius: 50px;
+      font-weight: bolder;
+      box-shadow: 0 5px 6px -6px black;
+      transition: 0.6s ease;  
+      width:50%;
+      color:black;
+  }
+  .login_title{
+      color:black;
+      font-weight: bold;
+      font-size:40px;
+    }
+    @media (max-width: 380px) {
+        .left{
+            display:none;
+
+        }
+        .right{
+            border-top-left-radius:50px;
+        }
+    }
+  </style>
+</head>
+<body>
+    <div class="background">
+        
+        <div class="container demo">
+        <div class="form_back">
+       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 left">
+        
+       </div>
+       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 right">
+       <center>
+        <img src="icons8-lock.gif" class="lock_icon">
+        <h3 class="login_title">Login</h3>
+        </center>
+        <br><br><br>
+        <form>
+        <input type="text" name="username" placeholder="Username" class="form-control user_input">
+                      
+                      <input type="password" name="password" placeholder="Password" class="form-control password_input">
+                        <br>
+                        <center>
+                      <input type="submit" name="Login" value="Login" class="btm btn-success form-control login_btn">
+                    </center>
+        </form>
+       </div>
+        </div>
+    </div>
+    
+    </div>
+    
+</body>
+</html>

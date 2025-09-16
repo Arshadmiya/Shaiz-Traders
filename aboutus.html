@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  <title>Responsive Sticky Navbar | CodingNepal</title> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/2d51c6ef00.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href="main.css">
+
+
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+
+    }
+
+    /* custom scroll bar */
+        /*::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    ::selection {
+      background: rgb(0, 123, 255, 0.3);
+    }
+
+    .content {
+      max-width: 1250px;
+      margin: auto;
+      padding: 0 30px;
+    }
+
+    .navbar {
+      position: fixed;
+      width: 100%;
+      z-index: 2;
+      padding: 25px 0;
+      transition: all 0.3s ease;
+
+
+    }
+
+    .navbar.sticky {
+      /*background: #1b1b1b;*/
+        /* padding: 10px 0;*/
+        /*box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);*/
+
+        }
+
+        /*.navbar .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar .logo a {
+      color: #fff;
+      font-size: 30px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .navbar .menu-list {
+      display: inline-flex;
+    }
+
+    .menu-list li {
+      list-style: none;
+    }
+
+    .menu-list li a {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 500;
+      margin-left: 25px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .menu-list li a:hover {
+      color: #007bff;
+      transition: 0.6s ease;
+    }
+
+
+    .icon {
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+      display: none;
+    }
+
+
+
+    .background {
+      background-image: url("background.jpg");
+      height: 720px;
+      background-position: center;
+      background-size: cover;
+      border-bottom-right-radius: 150px;
+      display: flex;
+      transform-origin: right bottom;
+      transform: skewY(3deg);
+
+    }
+
+    .banner_cont {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      font-size: 70px;
+      color: white;
+
+    }
+
+    .section_2 {
+      height: 350px;
+
+
+    }
+
+
+    .sec2_title {
+      display: flex;
+      justify-content: center;
+      font-size: 40px;
+      position: relative;
+      top: 50px;
+      font-weight: bold;
+    }
+
+    .sec2_papr {
+      text-align: center;
+      font-size: 25px;
+    }
+
+    .demotry {
+      height: 400px;
+      background-color: #222;
+    }
+
+    .section_3 {
+      height: 620px;
+      background-image: url("section3.jpg");
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+
+
+
+    }
+
+    .service {
+      height: 400px;
+
+      border: 1px solid white;
+      position: relative;
+      top: 50px;
+      background: rgba(235, 240, 236, 0.2);
+
+    }
+
+    .service_title {
+      color: black;
+      font-size: 50px;
+      text-align: center;
+    }
+
+    .icon_section {
+      height: 100px;
+      width: 100px;
+      border: 1px solid white;
+      border-radius: 150px;
+      position: relative;
+      top: 20px;
+      background-color: white;
+    }
+
+    .try {
+      font-size: 35px;
+      position: relative;
+      top: 30px;
+
+    }
+
+
+
+    .footer {
+      height: 60px;
+      background-color: black;
+
+    }
+
+    .para {
+      font-size: 23px;
+      color: rgb(17, 51, 4);
+      position: relative;
+      top: 50px;
+    }
+
+    .ttry {
+      font-size: 35px;
+      position: relative;
+      left: -40px;
+      top: 10px;
+
+
+    }
+    hr {width: 20%;
+      border-style:solid; 
+      border-width: 2px;
+      margin-left: auto;
+      margin-right: auto;
+      
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (max-width: 1230px) {
+      .content {
+        padding: 0 60px;
+      }
+    }
+
+    @media (max-width: 1100px) {
+      .content {
+        padding: 0 40px;
+      }
+    }
+
+    @media (max-width: 995px) {
+      .section_3 {
+        height: 1800px;
+        background-attachment: unset;
+      }
+
+    }
+
+
+
+
+    @media (max-width: 900px) {
+      .content {
+        padding: 0 30px;
+      }
+
+    }
+
+    @media (max-width: 868px) {
+      body.disabled {
+        overflow: hidden;
+      }
+
+      .icon {
+        display: block;
+      }
+
+      .icon.hide {
+        display: none;
+
+      }
+
+      .navbar .menu-list {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        left: -100%;
+        top: 0px;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        background: #222;
+        transition: all 0.3s ease;
+      }
+
+      .navbar.show .menu-list {
+        left: 0%;
+      }
+
+      .navbar .menu-list li {
+        margin-top: 45px;
+      }
+
+      .navbar .menu-list li a {
+        font-size: 23px;
+        margin-left: -100%;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+
+      .navbar.show .menu-list li a {
+        margin-left: 0px;
+      }
+    }
+
+    @media (max-width: 546px) {
+      .banner_cont {
+        font-size: 50px;
+      }
+
+      .background {
+        height: 420px;
+        border-bottom-right-radius: 0px;
+        transform: unset;
+      }
+
+      .section_2 {
+        height: 300px;
+      }
+      .sec2_title{
+        font-size: 30px;
+        top:30px;
+      }
+      .sec2_papr{
+        font-size:21px;
+      }
+
+
+    }
+
+    @media (max-width: 380px) {
+      .navbar .logo a {
+        font-size: 27px;
+      }
+
+      .banner_cont {
+        font-size: 40px;
+        top: 0px;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+      .background {
+        height: 420px;
+        border-bottom-right-radius: 0px;
+        transform: unset;
+      }
+
+      .sec2_title {
+        font-size: 30px;
+        top: 30px;
+      }
+
+      .sec2_papr {
+        font-size: 20px;
+      }*/
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <a href="#">Shaiz Traders</a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="index.html" id="try">Home</a></li>
+                <li><a href="#" style="color:gold">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="aboutus_background">
+        <div class="container">
+            <h3 class="about_title">
+                About Us
+            </h3>
+            <p class="title_para">
+                We provide hassle-free and cost-effective export of products to our clients worldwide with superior
+                quality and create value as well as Expanding our business into new industries and related businesses,
+                offering new avenues for cumulative growth and advancement for our firm, clients, stakeholders.
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <h3 class="m_v">
+            Mission & Vision
+        </h3>
+        <p class="m_v_para">
+            Our mission is to gradually exceed our customer and supplier’s expectations with premium quality and
+            cost-effective products and services with an aim to further maintain and develop a value oriented
+            international business to all parties involved. We believe in growing together and practice the principle of
+            fair business in all our dealings and transactions.
+        </p>
+        <hr>
+        <br>
+        <h3 class="m_v">
+            Quality Assurance
+        </h3>
+        <p class="m_v_para">
+            We believe a “Quality product” can face the test of any kind of market scenario and fetch a premium, giving
+            our customers more profit. We take the immense pride in the quality of goods we supply and source the best
+            available quality with lot of perseverance and with help of latest technology with no human touch.
+        </p>
+        <hr>
+
+        <br>
+        <h3 class="m_v">
+            Motive
+        </h3>
+        <p class="m_v_para">
+            We have a very distinct product range that includes many food products.We also supply the goods as per our
+            customer demand and requirement. We are constantly looking to expand our business by nurturing good
+            relationships and by providing excellent service to our clients, starting with good information, leading to
+            a healthy business and ending with efficient execution. Your trade with our group gets full attention of our
+            trained staff and over 99% of our contracts are satisfied because of the quality of our clientele. We are
+            committed to good quality of our clients, good quality business and good quality of executions. Our select
+            clientele is a testament to our excellence and
+        </p>
+        <hr>
+
+
+
+    </div>
+    <br><br><br><br><br><br>
+    <div class="footer">
+        <div class="container">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 footer_left">
+                <p class="footer_para">
+                    Copyright © 2021 Shaiztraders
+
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 footer_right">
+                <img src="icons8-facebook-48.png" class="social_icon">
+                <img src="icons8-instagram-48.png " class="social_icon">
+                <img src="icons8-twitter-circled-48.png" class="social_icon">
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = () => {
+            navbar.classList.add("show");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabled");
+        }
+        cancelBtn.onclick = () => {
+            body.classList.remove("disabled");
+            navbar.classList.remove("show");
+            menuBtn.classList.remove("hide");
+        }
+        window.onscroll = () => {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+
+        }
+
+
+    </script>
