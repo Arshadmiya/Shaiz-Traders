@@ -37,7 +37,7 @@
 
 .navbar.sticky {
   background: #1b1b1b;
-  opacity: 0.7;
+  opacity: 0.8;
   padding: 10px 0;
   /*box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);*/
   transition: 0.6s ease;
@@ -246,24 +246,35 @@ hr {
   background-color: black;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.footer_container {
+  width: 80%;
+  height: 100px;
+  display: flex;
+}
+.left_footer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left_footer_text {
+  color: white;
+}
+.right_footer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  height: 30px;
+  width: 30px;
 }
 
-.footer_right {
-  display: flex;
-  justify-content: flex-end;
-}
-.social_icon {
-  height: 35px;
-  width: 35px;
-}
-.footer_left {
-  display: flex;
-  justify-content: flex-start;
-}
-.footer_para {
-  color: white;
-  font-size: 18px;
-}
 /* contact us page*/
 .contact_banner {
   height: 500px;
